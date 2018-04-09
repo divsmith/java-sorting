@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -16,6 +18,6 @@ class SelectionSortTest {
 
         SelectionSort.sort(arr);
 
-        Assertions.assertEquals(sorted, arr);
+        Assertions.assertTrue(Arrays.equals(arr, sorted));
     }
 }
