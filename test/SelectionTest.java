@@ -14,7 +14,8 @@ class SelectionTest {
         Integer[] arr = {7, 9, 8, 2, 1, 3, 5, 4, 6};
         Integer[] sorted = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 
-        Selection.sort(arr);
+        Selection selection = new Selection();
+        selection.sort(arr);
 
         Assertions.assertTrue(Arrays.equals(arr, sorted));
     }

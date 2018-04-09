@@ -3,7 +3,7 @@
  */
 public class Selection {
 
-    public static void sort(Comparable[] arr)
+    public void sort(Comparable[] arr)
     {
         for (int i = 0; i < arr.length; i++)
         {
@@ -20,12 +20,12 @@ public class Selection {
         }
     }
 
-    private static boolean less(Comparable v, Comparable w)
+    private boolean less(Comparable v, Comparable w)
     {
         return v.compareTo(w) < 0;
     }
 
-    private static void exchange(Comparable[] arr, int i, int j)
+    private void exchange(Comparable[] arr, int i, int j)
     {
         Comparable swap = arr[i];
         arr[i] = arr[j];
